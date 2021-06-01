@@ -12,20 +12,16 @@ public class Cat
     }
 
 
-    public void tellYourAttributes(String checkStr) {
+    public String tellYourAttributes(String checkStr) {
         switch (checkStr) {
             case "#name":
-                System.out.println(this.name);
-                break;
+                return this.name;
             case "#color":
-                System.out.println(this.furColor);
-            break;
+                return this.furColor;
             case "#age":
-                System.out.println(this.age);
-            break;
+                return String.valueOf(this.age);
             default:
-                System.out.println("ERROR");
-                break;
+                return "ERROR";
         }
     }
 
