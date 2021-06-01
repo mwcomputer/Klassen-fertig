@@ -1,2 +1,3 @@
-# 02 | Klassen & Objekte in Java
+# 02_Klassen_Objekte
 
+### Klassen & Objekte in Java
