@@ -19,7 +19,8 @@ public class Cat
             case "#color":
                 return this.furColor;
             case "#age":
-                return String.valueOf(this.age);
+                //return String.valueOf(this.age);
+                return Integer.toString(this.age);
             default:
                 return "ERROR";
         }
