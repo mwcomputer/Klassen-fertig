@@ -4,13 +4,14 @@ public class Cat
     public String name;
     public String furColor;
     public int age;
+    public boolean isFemale;
 
-    public Cat(String name, String furColor, int age) {
+    public Cat(String name, String furColor, int age, boolean isFemale) {
         this.name = name;
         this.furColor = furColor;
         this.age = age;
+        this.isFemale = isFemale;
     }
-
 
     public String tellYourAttributes(String checkStr) {
         switch (checkStr) {
@@ -19,11 +20,20 @@ public class Cat
             case "#color":
                 return this.furColor;
             case "#age":
-                //return String.valueOf(this.age);
-                return Integer.toString(this.age);
+                return this.checkCompliance();
             default:
                 return "ERROR";
         }
     }
+
+    public String checkCompliance() {
+        if (isFemale) {
+            return "This is an inappropriate question!";
+        } else {
+            return Integer.toString(this.age);
+        }
+    }
+
+
 
 }
