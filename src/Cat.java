@@ -5,7 +5,7 @@ public class Cat
     public String furColor;
     public int age;
     public boolean isFemale;
-
+    public int level;
     public Cat(String name, String furColor, int age, boolean isFemale) {
         this.name = name;
         this.furColor = furColor;
@@ -41,9 +41,9 @@ public class Cat
 		// 3. --> "Talk to the hand!"
 		// 4++. --> "something else ..."
 
-        int counter =5;
-
-        switch (counter) {
+       // int level =5;
+this.level++;
+        switch (level) {
             case 1:
                 return "This is an inappropriate question!";
             case 2:
